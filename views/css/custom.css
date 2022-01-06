@@ -1,0 +1,103 @@
+.email-popup-con {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0,0,0,0.7);
+     z-index: 100;
+}
+.email-popup-inner {
+    width: 750px;
+    max-width: 75%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    height: 80vh;
+}
+.email-popup-inner-con {
+    height: 100%;
+    overflow: auto;
+}
+.email-popup-img-con,
+.email-popup-img-con img {
+     float: left;
+     width: 100%;
+     position: relative;
+}
+.email-popup-img-con::after {
+     content: " ";
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0,0,0,0.6);
+}
+.message-overlay-con {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 24px;
+    text-align: center;
+    z-index: 1;
+    background: #7c7235;
+    color: #fff;
+    height: 22px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.email-popup-img-con .message {
+     display: block;
+     color: #eee;
+     font-weight: 800;
+     text-transform: uppercase;
+     font-size: 50px;
+     line-height: 50px;
+}
+.email-popup-img-con .nothanks {
+     display: inline-block;
+     color: #ccc;
+     text-transform: uppercase;
+     margin-top: 5px;
+     font-weight: 600;
+}
+.email-popup-img-con .nothanks:hover {
+     color: #fff;
+     cursor: pointer;
+}
+.email-popup-inner-con .gform_wrapper {
+     padding: 25px;
+}
+.email-popup-inner-con div.gform_wrapper label.gfield_label {
+     display: none;
+}
+.email-popup-inner-con div.gform_wrapper .gform_footer .gform_button,
+.email-popup-inner-con div.gform_wrapper .gform_page_footer .button {
+     width: 100%;
+     background-color: #da842b;
+     padding: 10px;
+     font-size: 24px;
+}
+.email-popup-inner-con div.gform_wrapper .gform_footer .gform_button:hover,
+.email-popup-inner-con div.gform_wrapper .gform_page_footer .button:hover {
+     background-color: #ec9840;
+}
+.email-popup-inner-con div.gform_wrapper input[type="email"],
+.email-popup-inner-con div.gform_wrapper input[type="text"],
+.email-popup-inner-con div.gform_wrapper select {
+     background-color: transparent;
+     border: 2px solid #ccc;
+     color: #777;
+     padding: 15px;
+     border-radius: 5px;
+}
+.email-popup-inner-con .gform_confirmation_message {
+     color: #fff;
+     border: none;
+     background-color: #538594;
+}
